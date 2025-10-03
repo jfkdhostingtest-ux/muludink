@@ -1,0 +1,388 @@
+/* SHOPPING VIEW POPUP */
+
+.blur {
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+  opacity: 0;
+}
+
+.blur.active {
+  opacity: 1;
+  z-index: 100;
+}
+
+.shopping-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+}
+
+.shopping-view.active {
+  z-index: 100;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.shopping-view article {
+  height: max-content;
+  width: max-content;
+  background: var(--BG-COLOR);
+  border-top: 5px solid var(--THEME-COLOR2);
+  border-right: 5px solid var(--THEME-COLOR2);
+  padding: 3rem;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  border-top-right-radius: 20px;
+}
+
+.close {
+  display: grid;
+  place-content: center;
+}
+
+.close img {
+  width: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.product {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.product img {
+  width: 200px;
+}
+
+.product figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.product-head {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.product-head p {
+  color: var(--THEME-COLOR);
+}
+
+.product-head h1 {
+  font-size: 2.5rem;
+  font-family: var(--Bogart-light);
+}
+
+p.product-slogan {
+  width: 400px;
+  color: var(--THEME-COLOR);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.product figcaption section {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price p {
+  font-size: 1.5rem;
+  color: var(--THEME-COLOR);
+}
+
+.product-price input {
+  width: 50px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid var(--THEME-COLOR);
+  font-family: var(--Bogart-medium);
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  border-radius: 10px;
+}
+
+.product-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-btns button {
+  height: 60px !important;
+  width: 100%;
+  border-radius: 10px;
+  border: 1.5px solid white;
+  background: var(--THEME-COLOR);
+  color: white;
+  font-family: var(--Bogart-medium);
+  font-size: 1.2rem;
+}
+
+.product-btns button:last-child {
+  background: transparent;
+  border: 1.5px solid var(--THEME-COLOR);
+  color: var(--THEME-COLOR);
+}
+
+/* SHOPPING VIEW RESPONSIVE DESIGN */
+
+@media screen and (max-width: 725px) {
+  .shopping-view article {
+    width: 100%;
+    border-left: 5px solid var(--THEME-COLOR2);
+    border-top-left-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .shopping-view article {
+    height: 80%;
+    padding: 1.5rem;
+  }
+
+  .product {
+    flex-direction: column;
+  }
+
+  .product img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .product figcaption {
+    width: 100%;
+  }
+
+  .product-head h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p.product-slogan {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .shopping-view article {
+    height: 100%;
+  }
+
+  .product-btns {
+    flex-direction: column;
+  }
+}
+
+/* SHOP SECTION */
+
+section#shop {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 2.5rem;
+}
+
+section#shop .sort {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.sort li {
+  font-weight: 200;
+  transition: all 0.3s ease;
+}
+
+.sort li.active {
+  text-decoration: underline;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 3px;
+}
+
+.sort li:not(.active):hover {
+  opacity: 0.6;
+}
+
+.shop {
+  gap: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.shop figure {
+  height: 510px;
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.shop figure.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.shop figure img {
+  width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.shop figure::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -160px);
+  filter: blur(1px);
+  width: 100%;
+  height: 120px;
+  border-radius: 15px;
+  background: rgb(206, 199, 199);
+  z-index: -1;
+}
+
+.shop figure figcaption {
+  width: max-content;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop figure figcaption section {
+  border: 2px solid var(--THEME-COLOR2);
+  padding: 0.7rem;
+  border-radius: 15px;
+  width: max-content;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop figure figcaption .item-name {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--THEME-COLOR);
+}
+
+.shop figure figcaption .item-details {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  font-size: 1.2rem;
+}
+
+.shop figure figcaption .item-details p:first-child {
+  color: var(--THEME-COLOR);
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+.shop figure figcaption .item-details p:last-child {
+  font-weight: 300;
+}
+
+.shop figure button {
+  height: 50px;
+  width: 100%;
+  background: var(--THEME-COLOR);
+  color: white;
+  font-size: 1.1rem;
+  font-family: var(--FONT-FAMILY);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.shop figure button:hover {
+  background: transparent;
+  color: var(--THEME-COLOR);
+  border: 2px solid var(--THEME-COLOR);
+}
+
+/* SHOP SECTION RESPONSIVE DESIGN */
+
+@media screen and (max-width: 680px) {
+  section#shop {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .shop {
+    gap: 3.5rem;
+    padding: 0.8rem;
+  }
+
+  section#shop .sort {
+    gap: 2rem;
+  }
+
+  .shop figure {
+    height: 500px;
+    width: 100%;
+    gap: 0 !important;
+    justify-content: space-between;
+  }
+
+  .shop figure img {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .shop {
+    gap: 2.5rem;
+  }
+
+  .shop figure figcaption .item-name {
+    font-size: 1.2rem;
+  }
+
+  .shop figure figcaption .item-details {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuluDink Hand Made</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/intro.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/shop.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/about.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/chat.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/contact.css') }}"
+    />
+    <script defer src="{{ url_for('static', filename='js/shop.js') }}"></script>
+    <script
+      defer
+      src="{{ url_for('static', filename='js/translation.js') }}"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER CONTENT -->
+    <header>
+      <div class="header-top">
+        <div>
+          <img
+            src="{{ url_for('static', filename='img/united-states.svg') }}"
+            class="american-flag"
+            alt=""
+          />
+          <p>English</p>
+          <img
+            src="{{ url_for('static', filename='img/caret-down.svg') }}"
+            class="caret-down"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="header-top-2">
+        <img
+          src="{{ url_for('static', filename='img/ethiopian-flag.svg') }}"
+          class="ethiopian-flag"
+          alt=""
+        />
+        <p>Amharic</p>
+      </div>
+      <nav>
+        <h1>
+          <a href="#"
+            ><img
+              src="{{ url_for('static', filename='img/MuluDink-logo.png') }}"
+              alt=""
+          /></a>
+        </h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="shopping">
+          <a href="#shop">
+            <button class="go">Go Shopping</button>
+          </a>
+          <div class="cart-icon">
+            <a href="cart.html"
+              ><img
+                src="{{ url_for('static', filename='img/cart-icon.svg') }}"
+                alt=""
+            /></a>
+            <span>3</span>
+          </div>
+          <div class="side-bar-icon">
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SIDE BAR  -->
+    <div class="side-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CHAT -->
+    <section class="chat" id="chat-bot">
+      <div class="chat-header" id="chat-header">
+        <img
+          src="{{ url_for('static', filename='img/message.svg') }}"
+          alt="Chat Icon"
+        />
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="message bot-message">Hello! How can I help you today?</div>
+        <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type a message..." />
+          <button id="send-btn">↑</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOPPING VIEW POPUP -->
+    <div class="blur"></div>
+    <div class="shopping-view">
+      <article>
+        <figure class="product">
+          <img
+            src="{{ url_for('static', filename='img/Coffee-0.png') }}"
+            alt=""
+          />
+          <figcaption>
+            <div class="product-head">
+              <p>Fuel Your Focus: Purity Meets Performance</p>
+              <h1>MuluDink Coffee</h1>
+            </div>
+            <p class="product-slogan">
+              The high-altitude, traditional farming methods that create our
+              exceptional coffee are not just about superior taste—they are
+              about superior wellness.
+            </p>
+            <section>
+              <div class="product-price">
+                <p>14 oz (6-pack), $45</p>
+                <label for="amount">
+                  <input
+                    type="number"
+                    min="1"
+                    value="1"
+                    placeholder="1"
+                    id="amount"
+                    name="amount"
+                  />
+                </label>
+              </div>
+              <div class="product-btns">
+                <button>Add to cart</button>
+                <button class="cancel-btn">Cancel</button>
+              </div>
+            </section>
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section id="intro">
+        <section class="left-content">
+          <article class="first">
+            <div class="intro-main">
+              <p>From Our Land to Your Table</p>
+              <h1>Mulu<span>Dink</span> <span>Handmade</span></h1>
+              <img
+                src="{{ url_for('static', filename='img/style-stroke-2.svg') }}"
+                alt=""
+              />
+            </div>
+            <div class="dots-container">
+              <span class="dots"></span>
+              <span class="dots"></span>
+            </div>
+            <div class="cta-btns">
+              <a href="#shop"><button>Go Shopping</button></a>
+              <a href="#contact"
+                ><button class="contact-cta">Contact us!</button></a
+              >
+            </div>
+          </article>
+          <article class="secondary-intro-slogan">
+            <p>Authentic... Ethiopian delicacy</p>
+            <img
+              src="{{ url_for('static', filename='img/underline.svg') }}"
+              alt=""
+            />
+          </article>
+          <article class="intro-stroke-style">
+            <img
+              src="{{ url_for('static', filename='img/style-stroke.svg') }}"
+              alt=""
+            />
+            <img
+              src="{{ url_for('static', filename='img/style-stroke.svg') }}"
+              alt=""
+            />
+          </article>
+        </section>
+        <section class="middle-content">
+          <div></div>
+          <img
+            class="main-image"
+            src="{{ url_for('static', filename='img/Coffee-0.png') }}"
+            alt=""
+          />
+        </section>
+        <section class="right-content">
+          <div class="right-dots-container first">
+            <p class="one">Tastes</p>
+            <div class="right-dots"></div>
+            <p class="two">From</p>
+            <div class="right-dots"></div>
+            <p class="three">The</p>
+            <div class="right-dots"></div>
+            <p class="four">Cradle</p>
+          </div>
+        </section>
+        <div class="product-smaller">
+          <img
+            src="{{ url_for('static', filename='img/Coffee-0.png') }}"
+            alt=""
+          />
+          <img
+            src="{{ url_for('static', filename='img/Coffee-0.png') }}"
+            alt=""
+          />
+          <img
+            src="{{ url_for('static', filename='img/Coffee-0.png') }}"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- SHOP SECTION -->
+      <section id="shop">
+        <ul class="sort">
+          <li class="active">spices</li>
+          <li>flour</li>
+          <li>coffee</li>
+        </ul>
+        <article class="shop">
+          <figure>
+            <img
+              src="{{ url_for('static', filename='img/coffe-v2.png') }}"
+              alt=""
+            />
+            <figcaption>
+              <section>
+                <article class="item-name">
+                  Organic Ethiopian Coffee (ቡና)
+                </article>
+                <article class="item-details">
+                  <p>14 oz (6-pack)</p>
+                  <p>$45</p>
+                </article>
+              </section>
+              <button>View</button>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="{{ url_for('static', filename='img/berbere-v2.png') }}"
+              alt=""
+            />
+            <figcaption>
+              <section>
+                <article class="item-name">Organic Ethiopian Berbere</article>
+                <article class="item-details">
+                  <p>14 oz (6-pack)</p>
+                  <p>$45</p>
+                </article>
+              </section>
+              <button>View</button>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="{{ url_for('static', filename='img/shero-v2.png') }}"
+              alt=""
+            />
+            <figcaption>
+              <section>
+                <article class="item-name">Organic Ethiopian Shero</article>
+                <article class="item-details">
+                  <p>14 oz (6-pack)</p>
+                  <p>$45</p>
+                </article>
+              </section>
+              <button>View</button>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="about-head">
+          <h1>-- MuluDink Handmade --</h1>
+          <img
+            src="{{ url_for('static', filename='img/style-stroke-2.svg') }}"
+            alt=""
+          />
+        </div>
+        <figure>
+          <img
+            src="{{ url_for('static', filename='img/muludink-about.jpg') }}"
+            alt=""
+            class="about-image"
+          />
+          <figcaption>
+            <article>
+              <p>About us</p>
+              <h2>The origin of Muludink</h2>
+              <img
+                src="{{ url_for('static', filename='img/underline.svg') }}"
+                alt=""
+              />
+            </article>
+            <p class="about-content-1">
+              Muludink is a culinary enterprise with its conceptual roots in the
+              founder's personal struggle and its operational base established
+              in the United States. The company was founded by an
+              Ethiopian-American entrepreneur who, facing significant personal
+              gluten issues, became acutely aware of a major gap in the market:
+              the poor quality and general lack of nourishment in many of the
+              food products available in the U.S., including those labeled as
+              Ethiopian.
+            </p>
+          </figcaption>
+        </figure>
+        <div class="dots-container">
+          <span class="dots"></span>
+          <span class="dots"></span>
+        </div>
+        <article class="about-end">
+          <p>... And that’s where Muludink comes in</p>
+          <p class="conclusion">
+            By selling Ethiopian foods, Muludink solves the issue of
+            accessibility for people outside of large diaspora communities who
+            want to experience authentic Ethiopian flavors without the
+            difficulty of sourcing specialized ingredients or the lengthy,
+            traditional preparation time, all while delivering products with a
+            strong focus on quality, health, and authentic nutritional value.
+          </p>
+        </article>
+      </section>
+
+      <section class="last-cta">
+        <img
+          src="{{ url_for('static', filename='img/muludink-banner.jpg') }}"
+          alt=""
+        />
+        <q>
+          Muludink's core mission is to reclaim the inherent quality and health
+          benefits of Ethiopian cuisine, offering traditionally made, genuinely
+          nourishing products that cater both to the diaspora seeking a
+          high-quality taste of home and to health-conscious consumers
+        </q>
+        <a href="#shop"><button>Make an order</button></a>
+      </section>
+
+      <img
+        class="collage-1"
+        src="{{ url_for('static', filename='img/collage-1.svg') }}"
+        alt=""
+      />
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <article class="contact-form">
+          <h2>Get In Touch</h2>
+          <form action="">
+            <div>
+              <label for="full-name">
+                <p>Full Name</p>
+                <input type="text" name="full-name" id="full-name" />
+              </label>
+              <label for="email-address">
+                <p>Email Address</p>
+                <input type="email" name="email-address" id="email-address" />
+              </label>
+            </div>
+            <label for="message">
+              <p>Message</p>
+              <textarea name="message" id="message"></textarea>
+            </label>
+            <p class="notice">
+              *this message will be sent directly to the official muludink email
+              inbox
+            </p>
+            <button>Send</button>
+            <img
+              src="{{ url_for('static', filename='img/style-stroke.svg') }}"
+              alt=""
+            />
+          </form>
+        </article>
+        <article class="info">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="var(--THEME-COLOR)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              >
+                <path
+                  stroke-dasharray="64"
+                  stroke-dashoffset="64"
+                  d="M4 5h16c0.55 0 1 0.45 1 1v12c0 0.55 -0.45 1 -1 1h-16c-0.55 0 -1 -0.45 -1 -1v-12c0 -0.55 0.45 -1 1 -1Z"
+                >
+                  <animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    dur="0.6s"
+                    values="64;0"
+                  />
+                </path>
+                <path
+                  stroke-dasharray="24"
+                  stroke-dashoffset="24"
+                  d="M3 6.5l9 5.5l9 -5.5"
+                >
+                  <animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    begin="0.6s"
+                    dur="0.2s"
+                    values="24;0"
+                  />
+                </path>
+              </g>
+            </svg>
+            : muludink-admin@gmail.com
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="var(--THEME-COLOR)"
+                d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V15c0-0.828-0.672-1.5-1.5-1.5h-15C3.672 13.5 3 14.172 3 15v5.5a1.5 1.5 0 0 0 1.5 1.5h15Z"
+              />
+              <path
+                fill="var(--THEME-COLOR)"
+                d="M12 13c1.104 0 2-0.896 2-2V5c0-1.104-0.896-2-2-2s-2 0.896-2 2v6c0 1.104 0.896 2 2 2Z"
+              />
+            </svg>
+            : +1 234 567 890
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="var(--THEME-COLOR)"
+                d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM12 17.27L7.73 14l-1.46 1.18L12 20l5.73-4.82-1.46-1.18L12 17.27ZM12 12l3-2-3-2-3 2 3 2Z"
+              />
+            </svg>
+            : Addis Ababa, Ethiopia
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="main-footer">
+        <article class="title">
+          <img
+            src="{{ url_for('static', filename='img/Muludink-footer-logo.png') }}"
+            alt=""
+          />
+          <p>©Muludink Spices, 2025 All Rights Reserved</p>
+        </article>
+        <article class="footer-details">
+          <ul class="legal">
+            <li><a href="#">Privacy & Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Refund & Returns Policy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <ul class="socials">
+            <li>
+              <a href="#"
+                ><img
+                  src="{{ url_for('static', filename='img/instagram-logo.svg') }}"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="{{ url_for('static', filename='img/tiktok-logo.svg') }}"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="{{ url_for('static', filename='img/facebook-logo.svg') }}"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <img
+        src="{{ url_for('static', filename='img/Muludink _Farmer-09.svg') }}"
+        alt=""
+      />
+      <p class="footer-end">
+        Developed By <a href="https://jfkd.com.et" target="_blank">JFKD</a>
+      </p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const body = document.querySelector("body");
+        const header = document.querySelector("header");
+        const chat = document.getElementById("chat-bot");
+        const chatHeader = document.getElementById("chat-header");
+        const sendBtn = document.getElementById("send-btn");
+        const userInput = document.getElementById("user-input");
+        const chatBody = document.getElementById("chat-body");
+
+        // Ensure chat starts collapsed
+        chat.classList.remove("expanded");
+
+        // Header scroll behavior
+        window.addEventListener("scroll", () => {
+          header.classList.toggle("scroll", window.scrollY > 0);
+        });
+
+        let lastScrollY = window.scrollY;
+        window.addEventListener("scroll", () => {
+          const currentScrollY = window.scrollY;
+          if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            header.style.top = "-30%";
+          } else {
+            header.style.top = "0";
+          }
+          lastScrollY = currentScrollY;
+        });
+
+        // Intersection Observer for scroll embellishments
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        document.querySelectorAll("*").forEach((el) => observer.observe(el));
+
+        // Chat toggle
+        chatHeader.addEventListener("click", () => {
+          chat.classList.toggle("expanded");
+        });
+
+        // Chat send message
+        sendBtn.addEventListener("click", async (e) => {
+          e.preventDefault();
+          const message = userInput.value;
+          if (!message) return;
+
+          // Show user message
+          const msgDiv = document.createElement("div");
+          msgDiv.classList.add("message");
+          msgDiv.textContent = "You: " + message;
+          chatBody.appendChild(msgDiv);
+
+          // Send to server (assuming /form endpoint exists)
+          try {
+            const res = await fetch("/form", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ message }),
+            });
+            const data = await res.json();
+
+            // Show bot response
+            const botDiv = document.createElement("div");
+            botDiv.classList.add("message", "bot-message");
+            botDiv.textContent = "Bot: " + data.response;
+            chatBody.appendChild(botDiv);
+          } catch (error) {
+            console.error("Error sending message:", error);
+            const botDiv = document.createElement("div");
+            botDiv.classList.add("message", "bot-message");
+            botDiv.textContent = "Bot: Sorry, something went wrong.";
+            chatBody.appendChild(botDiv);
+          }
+
+          userInput.value = "";
+          chatBody.scrollTop = chatBody.scrollHeight;
+        });
+      });
+    </script>
+  </body>
+</html>

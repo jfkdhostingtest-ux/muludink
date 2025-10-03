@@ -1,0 +1,195 @@
+[
+  {
+    "question": "What is MuluDink?",
+    "answer": "MuluDink is a store that sells authentic Ethiopian handmade products."
+  },
+  {
+    "question": "Who founded MuluDink?",
+    "answer": "MuluDink was founded by an Ethiopian-American entrepreneur."
+  },
+  {
+    "question": "Where is MuluDink based?",
+    "answer": "MuluDink's operational base is in the United States."
+  },
+  {
+    "question": "What products do you sell?",
+    "answer": "We sell Ethiopian coffee, spices, flours, and traditional food ingredients."
+  },
+  {
+    "question": "What is special about your coffee?",
+    "answer": "Our coffee is made using high-altitude traditional farming methods for superior taste and wellness."
+  },
+  {
+    "question": "What ingredients are in your coffee?",
+    "answer": "Our coffee is 100% Arabica beans, handpicked from Ethiopian highlands with no additives."
+  },
+  {
+    "question": "Do you have spices?",
+    "answer": "Yes! We sell berbere, mitmita, turmeric, and other authentic Ethiopian spices."
+  },
+  {
+    "question": "What ingredients are in berbere?",
+    "answer": "Berbere is made from chili peppers, garlic, ginger, basil, korarima, and other Ethiopian spices."
+  },
+  {
+    "question": "How can I place an order?",
+    "answer": "You can place an order by adding items to your cart and checking out using our secure payment system."
+  },
+  {
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to most countries worldwide. Shipping fees may apply."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept credit cards, debit cards, and PayPal."
+  },
+  {
+    "question": "Can I return a product?",
+    "answer": "Yes, products can be returned within 30 days according to our return policy."
+  },
+  {
+    "question": "Can I cancel my order?",
+    "answer": "Orders can be canceled within 1 hour of placing them by contacting support."
+  },
+  {
+    "question": "How do I track my order?",
+    "answer": "You can track your order using the tracking link sent to your email after purchase."
+  },
+  {
+    "question": "Hello",
+    "answer": "Hello! Welcome to MuluDink. How can I help you today?"
+  },
+  {
+    "question": "Hi",
+    "answer": "Hi there! I'm here to answer any questions you have about MuluDink."
+  },
+  {
+    "question": "Hey",
+    "answer": "Hey! Thanks for visiting MuluDink. What would you like to know?"
+  },
+  {
+    "question": "Good morning",
+    "answer": "Good morning! How can I assist you with MuluDink today?"
+  },
+  {
+    "question": "Good afternoon",
+    "answer": "Good afternoon! Looking for something special from MuluDink?"
+  },
+  {
+    "question": "Good evening",
+    "answer": "Good evening! How can I help you enjoy authentic Ethiopian products?"
+  },
+  {
+    "question": "How are you?",
+    "answer": "I'm just a bot, but I'm here to help you with anything about MuluDink!"
+  },
+  {
+    "question": "Okay",
+    "answer": "Okay! Anything else you want to know?"
+  },
+  {
+    "question": "Sure",
+    "answer": "Sure! Anything else you want to know?"
+  },
+  {
+    "question": "Thanks",
+    "answer": "You're welcome! Let me know if you have any other questions."
+  },
+  {
+    "question": "Thank you",
+    "answer": "No problem! I'm here to help with anything about MuluDink."
+  },
+  {
+    "question": "What are the ingredients in your flour?",
+    "answer": "Our traditional Ethiopian flour is made from teff, wheat, or barley depending on the product, without any additives."
+  },
+  {
+    "question": "Do you have gluten-free options?",
+    "answer": "Yes, we have teff flour which is naturally gluten-free and perfect for traditional injera."
+  },
+  {
+    "question": "Can I give feedback?",
+    "answer": "Absolutely! You can send your feedback via the chat or through our Contact Us page."
+  },
+  {
+    "question": "Do you offer gift cards?",
+    "answer": "Yes! MuluDink offers gift cards in various denominations that can be used on our website."
+  },
+  {
+    "question": "Can I customize my order?",
+    "answer": "Some products can be customized. Please contact our support team for details."
+  },
+  {
+    "question": "How long does delivery take?",
+    "answer": "Delivery times vary by location, but most domestic orders arrive within 5-7 business days."
+  },
+  {
+    "question": "Do you have subscription options?",
+    "answer": "Yes, you can subscribe to receive our coffee or spice boxes on a monthly basis."
+  },
+  {
+    "question": "Are your products organic?",
+    "answer": "Many of our products are organically grown. Please check each product description for details."
+  },
+  {
+    "question": "Can I get a discount for bulk orders?",
+    "answer": "Yes, we offer discounts for bulk orders. Contact our support team for pricing details."
+  },
+  {
+    "question": "Do you provide recipes?",
+    "answer": "Yes! We include traditional Ethiopian recipes with some of our products."
+  },
+  {
+    "question": "Are your spices freshly ground?",
+    "answer": "Yes, our spices are freshly ground to maintain maximum flavor and aroma."
+  },
+  {
+    "question": "Do you have vegan products?",
+    "answer": "Yes, many of our products are vegan-friendly. Check the product details for specifics."
+  },
+  {
+    "question": "Can I reorder a previous order easily?",
+    "answer": "Yes, simply check your order history and select 'Reorder' to place the same items again."
+  },
+  {
+    "question": "Do you offer local pickup?",
+    "answer": "Currently, we ship all orders. Local pickup is not available at this time."
+  },
+  {
+    "question": "Are your products ethically sourced?",
+    "answer": "Yes, we prioritize working with farmers and producers who follow ethical and fair trade practices."
+  },
+  {
+    "question": "Can I track my international shipment?",
+    "answer": "Yes, you will receive a tracking link for international shipments once your order is processed."
+  },
+  {
+    "question": "Do you have seasonal promotions?",
+    "answer": "Yes! Keep an eye on our website and newsletter for special seasonal discounts and promotions."
+  },
+  {
+    "question": "Can I get a sample of your products?",
+    "answer": "Currently, we do not offer samples, but some products come in smaller sizes perfect for trying out."
+  },
+  {
+    "question": "What is your return policy for international orders?",
+    "answer": "International returns are accepted within 30 days. Shipping fees may apply, and items must be unused."
+  },
+  {
+    "question": "Do you have a loyalty program?",
+    "answer": "Yes, we offer a loyalty program where you earn points for each purchase that can be redeemed for discounts."
+  },
+  {
+    "question": "Can I request a product that is not listed?",
+    "answer": "Yes! You can contact us to suggest new products and we may add them based on demand."
+  },
+  {
+    "question": "Are your coffee beans single origin?",
+    "answer": "Yes, our coffee beans are single-origin, sourced directly from specific Ethiopian regions."
+  },
+  {
+    "question": "Do you offer wholesale options?",
+    "answer": "Yes, we provide wholesale options for retailers. Please reach out to our support for details."
+  }
+]
+
